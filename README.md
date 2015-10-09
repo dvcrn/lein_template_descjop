@@ -72,8 +72,17 @@ see your app dir. looks like
 |   +-- NAMESPACE
 |       +-- core.cljs // ClojureScript for Electron in here
 +-- src_front
-    +--NAMESPACE_om
-       +-- core.cljs // Frontend clojureScript in here
+|   +--NAMESPACE_om
+|      +-- core.cljs // Frontend clojureScript in here
++-- src_tools
+    +-- figwheel_middleware.clj // figwheel helper
+```
+
+The om template supports figwheel
+
+```
+$ lein cljsbuild once 
+$ lein trampoline figwheel frontend
 ```
 
 ## Usage : [reagent](https://github.com/reagent-project/reagent) based project
